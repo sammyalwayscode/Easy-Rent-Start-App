@@ -1,0 +1,138 @@
+.RouteMainDiv {
+  height: 100vh;
+  width: 100%;
+  background-color: #f4f9fa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.SubRouteDiv {
+  width: 90%;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImgNameRoutMAin {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background-color: green; */
+  margin-bottom: 5px;
+}
+
+.RouteAgentImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  object-fit: cover;
+  border: 3px solid #0373ab;
+}
+
+.RouteAgentNameTime {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.RouteAgentName {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.RouteAgentTime {
+  font-weight: 600;
+  font-size: smaller;
+}
+
+.FourImgRouteDiv {
+  width: 700px;
+  /* background-color: rgb(75, 0, 128); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.RouthFrImg {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(63, 36, 36, 0.12);
+  border-radius: 5px;
+}
+
+.LocationDiscriptinDiv {
+  width: 500px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.RouteLocationDiv {
+  width: 400px;
+  text-align: center;
+}
+
+.LocationTitle {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.LocationContent {
+  font-weight: 600;
+}
+
+.RouteDiscrDiv {
+  width: 400px;
+  text-align: center;
+}
+
+.DiscriptionTitle {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.DiscriptionContent {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 700px) {
+  .RouteMainDiv {
+    height: 100%;
+  }
+
+  .SubRouteDiv {
+    width: 310px;
+  }
+
+  .FourImgRouteDiv {
+    width: 310px;
+    flex-direction: column;
+  }
+
+  .RouthFrImg {
+    margin: 0;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .RouteLocationDiv {
+    width: 290px;
+  }
+
+  .RouteDiscrDiv {
+    width: 290px;
+  }
+
+  .ImgNameRoutMAin {
+    margin-top: 20px;
+  }
+}
