@@ -10,11 +10,11 @@
 
 .SubRouteDiv {
   width: 90%;
-  background-color: #fff;
+  /* background-color: #fff; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .ImgNameRoutMAin {
@@ -24,29 +24,31 @@
   align-items: center;
   /* background-color: green; */
   margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .RouteAgentImg {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 100px;
   object-fit: cover;
   border: 3px solid #0373ab;
 }
 
 .RouteAgentNameTime {
-  font-size: 18px;
+  /* font-size: 18px; */
   margin-left: 10px;
 }
 
 .RouteAgentName {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .RouteAgentTime {
   font-weight: 600;
-  font-size: smaller;
+  font-size: 13px;
+  /* color: gray; */
 }
 
 .FourImgRouteDiv {
@@ -70,10 +72,14 @@
 
 .LocationDiscriptinDiv {
   width: 500px;
+  /* background-color: darkcyan; */
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  border: 1px solid #000;
+  /* overflow-x: auto; */
 }
 
 .RouteLocationDiv {
@@ -82,8 +88,9 @@
 }
 
 .LocationTitle {
-  font-size: xx-large;
+  font-size: large;
   font-weight: 600;
+  color: gray;
 }
 
 .LocationContent {
@@ -96,12 +103,50 @@
 }
 
 .DiscriptionTitle {
-  font-size: xx-large;
+  font-size: large;
   font-weight: 600;
+  color: gray;
 }
 
 .DiscriptionContent {
   font-weight: 400;
+}
+
+.RoutePriceDiv {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.PriceTitle {
+  font-size: large;
+  font-weight: 600;
+  color: gray;
+}
+
+.PriceContent {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.RouteMapDiv {
+  width: 400px;
+  /* text-align: center; */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.MapTitle {
+  font-size: large;
+  font-weight: 600;
+  color: gray;
+}
+
+hr {
+  width: 400px;
 }
 
 @media screen and (max-width: 700px) {
@@ -111,6 +156,10 @@
 
   .SubRouteDiv {
     width: 310px;
+  }
+
+  hr {
+    width: 240px;
   }
 
   .FourImgRouteDiv {
@@ -129,6 +178,14 @@
   }
 
   .RouteDiscrDiv {
+    width: 290px;
+  }
+
+  .RoutePriceDiv {
+    width: 290px;
+  }
+
+  .RouteMapDiv {
     width: 290px;
   }
 

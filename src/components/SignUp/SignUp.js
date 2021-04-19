@@ -51,8 +51,8 @@ function SignUp() {
     if (newUser) {
       await db
         .doc(newUser.user.uid)
-        .collection("HouseAgent")
-        .doc()
+        // .collection("HouseAgent")
+        // .doc()
         .set({
           name,
           email,

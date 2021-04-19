@@ -9,10 +9,19 @@ import Form from "./components/DashBoard/View/Form";
 import MaterialDash from "./components/DashBoard/MaterialDash";
 import CardRoute from "./components/CardRoute/CardRoute";
 import { GlobalProvider } from "./components/AuthState/GlobalContext";
+import TheBoard from "./components/TheBoard/TheBoard";
+import BoardHome from "./components/BaordHome/BoardHome";
+import BoardAgents from "./components/BoardAgents/BoardAgents";
+import DashBoardHome from "./components/BaordHome/DashBoardHome";
+import DashBoardAgents from "./components/BoardAgents/DashBoardAgents";
+import DashBoardFlat from "./components/BoardFlat/DashBoardFlat";
+import DashBoardOneRoom from "./components/BoardOneRoom/DashBoardOneRoom";
+import DashBoardStore from "./components/BoardStore/DashBoardStore";
+import DashBoardUploads from "./components/BoardUploads/DashBoardUploads";
 
 function App() {
   return (
-    <div>
+    <>
       <GlobalProvider>
         <Router>
           <Switch>
@@ -21,10 +30,17 @@ function App() {
             <Route path="/upload" component={Form} />
             <Route path="/dashboard" component={MaterialDash} />
             <Route path="/detail/:id" component={CardRoute} />
+            <Route path="/thedash" component={TheBoard} />
+            <Route path="/thedashhome" component={DashBoardHome} />
+            <Route path="/thedashagent" component={DashBoardAgents} />
+            <Route path="/thedashflatupload" component={DashBoardFlat} />
+            <Route path="/thedashoneroomupload" component={DashBoardOneRoom} />
+            <Route path="/thedashstoreupload" component={DashBoardStore} />
+            <Route path="/thedashmyuploads" component={DashBoardUploads} />
           </Switch>
         </Router>
       </GlobalProvider>
-    </div>
+    </>
   );
 }
 

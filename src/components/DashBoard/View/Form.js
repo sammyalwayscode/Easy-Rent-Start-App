@@ -184,6 +184,8 @@ function Form() {
         discription,
         price,
         createdBy: newPost.uid,
+        createdAt: new Date().toString(),
+        timeDate: new Date().toString(),
       });
     }
   };

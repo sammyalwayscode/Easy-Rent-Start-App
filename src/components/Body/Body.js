@@ -9,25 +9,27 @@ import OwnerCard from "../OwnerCard/OwnerCard";
 import CardRoute from "../CardRoute/CardRoute";
 import MaterialDash from "../DashBoard/MaterialDash";
 import { GlobalContext } from "../AuthState/GlobalContext";
+import NavBar from "../NavBar/index";
+import SideBar from "../SideBar/SideBar";
 
 function Body() {
   const { current } = useContext(GlobalContext);
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="BodyMain">
+      <NavBar toggle={toggle} />
+      <SideBar isOpen={isOpen} toggle={toggle} />
+      {/* <Header /> */}
+      <Hero />
       <div className="SubBodyMain">
-        <Header />
-        <Hero />
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-          }}
-        >
-          <HomeCard />
-          {/* <div>{current && current.name}</div> */}
-        </div>
-        <Footer />
+        <HomeCard />
+        {/* <div>{current && current.name}</div> */}
       </div>
+      <Footer />
     </div>
   );
 }

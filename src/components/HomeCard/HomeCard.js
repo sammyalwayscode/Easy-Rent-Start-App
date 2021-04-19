@@ -10,7 +10,7 @@ import { app } from "../FireBase/Base";
 import { Link } from "react-router-dom";
 import UploadImage from "../UploadImage/UploadImage";
 
-const FlatRent = app.firestore().collection("RentFlat");
+const FlatRent = app.firestore().collection("AllRent");
 function HomeCard() {
   const [homes, setHomes] = useState([]);
 
